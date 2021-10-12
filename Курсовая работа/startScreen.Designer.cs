@@ -220,7 +220,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "startScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Магазин (аудио-видео продукции)";
+            this.Text = "Школа";
             this.ResumeLayout(false);
 
         }
