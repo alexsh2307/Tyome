@@ -22,7 +22,7 @@ namespace Курсовая_работа
         }
 
         public double number { get; set; }
-        public double symbol { get; set; }
+        public char symbol { get; set; }
 
         public override string ToString() => $"{number}{symbol}";
     }
@@ -50,7 +50,7 @@ namespace Курсовая_работа
 
         public override string ToString()
         {
-            return name + " " + age + " " + klass.ToString() + " " + sex + " " + attendance + " " + academic_performance + " " + foreign;
+            return name + ", " + age + ", " + klass.ToString() + ", " + sex + ", " + attendance + ", " + academic_performance + ", " + foreign;
         }
     }
 }

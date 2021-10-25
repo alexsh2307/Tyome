@@ -26,7 +26,7 @@ namespace Курсовая_работа
             {
                 textBox1.BackColor = Color.White;
                 StreamWriter sw = File.CreateText(textBox1.Text);
-                foreach (student a in startScreen.Students)
+                foreach (student a in startScreen.students)
                 {
                     sw.WriteLine(a.ToString());
                 }

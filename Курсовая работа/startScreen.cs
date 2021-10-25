@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Курсовая_работа
 {
     public partial class startScreen : Form
     {
-        internal List<student> Students = new List<student>();
+        internal List<student> students = new List<student>();
         public startScreen()
         {
             InitializeComponent();
@@ -21,7 +15,7 @@ namespace Курсовая_работа
         public void showList()
         {
             hideList();
-            foreach (student a in Students)
+            foreach (student a in students)
             {
                 show(a);
             }
@@ -52,13 +46,13 @@ namespace Курсовая_работа
 
         internal void Add(student a)
         {
-            Students.Add(a);
+            students.Add(a);
             show(a);
         }
 
         internal void Del(student a)
         {
-            Students.Remove(a);
+            students.Remove(a);
             listView1.Items.Remove(new ListViewItem(new string[] {
                     a.name, a.age.ToString(), a.klass.ToString(), a.sex,
                     a.attendance ? "Да" : "Нет", a.academic_performance, a.foreign ? "Да" : "Нет"
@@ -72,11 +66,11 @@ namespace Курсовая_работа
             {
                 listView1.Items.Remove(item);
                 f = true;
-                for (int i = 0; i < Students.Count; i++)
+                for (int i = 0; i < students.Count; i++)
                 {
-                    if(Students[i].name == item.Text)
+                    if(students[i].name == item.Text)
                     {
-                        Students.Remove(Students[i]);
+                        students.Remove(students[i]);
                     }
                 }
             }
@@ -123,7 +117,7 @@ namespace Курсовая_работа
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Students.Clear();
+            students.Clear();
             showList();
         }
 

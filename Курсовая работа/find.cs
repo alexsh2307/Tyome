@@ -21,7 +21,7 @@ namespace Курсовая_работа
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(student a in startScreen.Students)
+            foreach(student a in startScreen.students)
             {
                 if(a.name == textBox1.Text)
                 {
@@ -44,7 +44,7 @@ namespace Курсовая_работа
 
         private void button3_Click(object sender, EventArgs e)
         {
-            foreach (student a in startScreen.Students)
+            foreach (student a in startScreen.students)
             {
                 if (a.name == textBox1.Text)
                 {

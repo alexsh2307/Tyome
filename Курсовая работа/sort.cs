@@ -23,39 +23,39 @@ namespace Курсовая_работа
         {
             if (comboBox1.Text.Length > 0)
             {
-                if(comboBox1.Text == "Название")
+                if(comboBox1.Text == "ФИО")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.name).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.name).ToList();
                 }
 
                 if (comboBox1.Text == "Возраст")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.age).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.age).ToList();
                 }
 
                 if (comboBox1.Text == "Класс")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.klass).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.klass.ToString()).ToList();
                 }
 
                 if (comboBox1.Text == "Пол")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.sex).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.sex).ToList();
                 }
 
                 if (comboBox1.Text == "Посещаемость")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.attendance).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.attendance).ToList();
                 }
 
                 if (comboBox1.Text == "Успеваемость")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.academic_performance).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.academic_performance).ToList();
                 }
 
                 if (comboBox1.Text == "Иностранец")
                 {
-                    startScreen.Students = startScreen.Students.OrderBy(si => si.foreign).ToList();
+                    startScreen.students = startScreen.students.OrderBy(si => si.foreign).ToList();
                 }
 
                 startScreen.hideList();

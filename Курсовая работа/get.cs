@@ -29,8 +29,8 @@ namespace Курсовая_работа
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] str = line.Split(' ');
-                    startScreen.Students.Add(new student(str[0], Convert.ToInt32(str[1]), new Klass(str[2]), str[3], Convert.ToBoolean(str[4]), str[5], Convert.ToBoolean(str[6])));
+                    string[] str = line.Split(',');
+                    startScreen.students.Add(new student(str[0].Trim(), Convert.ToInt32(str[1].Trim()), new Klass(str[2].Trim()), str[3].Trim(), Convert.ToBoolean(str[4].Trim()), str[5].Trim(), Convert.ToBoolean(str[6].Trim())));
                 }
                 startScreen.showList();
                 startScreen.Show();

@@ -25,11 +25,11 @@ namespace Курсовая_работа
             String p = "^.*" + textBox1.Text + ".*$";
             List<student> copyList = new List<student>();
 
-            for (int i = 0; i < startScreen.Students.Count; i++)
+            for (int i = 0; i < startScreen.students.Count; i++)
             {
-                if (Regex.IsMatch(startScreen.Students[i].name, p))
+                if (Regex.IsMatch(startScreen.students[i].name, p))
                 {
-                    copyList.Add(startScreen.Students[i]);
+                    copyList.Add(startScreen.students[i]);
                 }
             }
             startScreen.hideList();
